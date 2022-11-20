@@ -1,0 +1,24 @@
+{
+  "name": "ecom-scrapper-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vic30004/ecom-scrapper-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vic30004/ecom-scrapper-frontend/issues"
+  },
+  "homepage": "https://github.com/vic30004/ecom-scrapper-frontend#readme",
+  "devDependencies": {
+    "electron": "^21.3.0"
+  }
+}
