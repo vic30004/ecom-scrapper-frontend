@@ -18,6 +18,19 @@ h1{
     font-size: clamp(1.5rem, 2.5vw, 2rem )
 }
 
+#search{
+    display: flex;
+    justify-content: center;
+}
+
+#searchInput {
+    width: 220px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(108, 108, 108);
+}
+
 .imgContainer {
     width: clamp(100px, 160px, 160px);
     height:  clamp(100px, 160px, 160px);

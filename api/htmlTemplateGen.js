@@ -1,4 +1,5 @@
-const productContentContainer = document.querySelector("#productContent");
+const searchForm = document.querySelector("#searchForm");
+const searchBtn = document.querySelector("#submitBtn");
 
 const dummyData = [
   {
@@ -19,7 +20,7 @@ const dummyData = [
   },
 ];
 
-const moneyFormat = (price) => price.toFixed(2);
+const moneyFormat = (price) => parseInt(price).toFixed(2);
 
 const generateControls = () => `
   <span class="update">Update</span>
@@ -56,17 +57,6 @@ const generateProductInfo = (productInfo) => {
   return res;
 };
 
-const generateProductDetails = (product) => {
-  const productDetailsContainer = document.createElement("div");
-  productDetailsContainer.className = "productDetails";
-
-  productDetailsContainer.innerHTML = `
-    ${generateImageContainer(product.productImage, product.product_name)};
-    ${generateProductInfo(product)}
-  `;
-  return productDetailsContainer;
-};
-
 const generateProductTemplate = (data) => {
   let res = "";
 
@@ -89,9 +79,25 @@ const generateProductTemplate = (data) => {
 };
 
 const generateMainTemplate = (data) => {
+  const productContentContainer = document.querySelector("#productContent");
+
   const content = generateProductTemplate(data);
-  console.log(content);
   productContentContainer.innerHTML = content;
 };
 
-generateMainTemplate(dummyData);
+searchBtn?.addEventListener("click", (e) => {
+  e.preventDefault();
+  generateMainTemplate(dummyData);
+});
+
+searchForm?.addEventListener("submit", (e) => {
+  e.preventDefault();
+  generateMainTemplate(dummyData);
+});
+
+module.exports = {
+  moneyFormat,
+  generateControls,
+  generateProductInfo,
+  generateMainTemplate,
+};

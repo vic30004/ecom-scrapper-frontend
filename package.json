@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/vic30004/ecom-scrapper-frontend#readme",
   "devDependencies": {
-    "electron": "^21.3.0"
+    "electron": "^21.3.0",
+    "jest-environment-jsdom": "^29.3.1"
+  },
+  "dependencies": {
+    "jest": "^29.3.1"
   }
 }
