@@ -29,6 +29,15 @@ h1{
     border-radius: 10px;
     outline: none;
     border: 1px solid rgb(108, 108, 108);
+    margin-right: 1rem;;
+}
+
+#submitBtn{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .imgContainer {
@@ -81,6 +90,12 @@ h3 {
 
 .addBtn{
     margin-top: 1rem;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .controls{
